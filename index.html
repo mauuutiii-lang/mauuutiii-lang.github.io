@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Información sobre el respaldo cifrado de la base de datos de Ciclo en Google Drive.">
+<meta name="referrer" content="no-referrer">
+<title>Respaldo Ciclo | Información</title>
+<!-- La etiqueta de verificación de Search Console se agregará antes de verificar el sitio. -->
+<style>
+:root{color-scheme:light;--green:#184b3e;--ink:#24322e;--muted:#586660;--line:#dce5df;--paper:#fcfdfb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--green);text-underline-offset:.2em}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid #b3d39a;outline-offset:5px}
+.wrap{max-width:860px;margin:auto;padding:0 28px}header{border-bottom:1px solid var(--line)}nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:16px 0}.brand{font-weight:750;letter-spacing:.11em;text-decoration:none}.navlinks{display:flex;gap:24px;font-size:15px}main{padding:62px 0 58px}.eyebrow{color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:750;margin:0 0 16px}h1{font-size:clamp(32px,6vw,48px);line-height:1.16;letter-spacing:-.035em;margin:0 0 22px;font-weight:700}h2{font-size:23px;line-height:1.3;margin:36px 0 12px;letter-spacing:-.015em}.lead{font-size:21px;line-height:1.6;color:var(--muted);margin-bottom:34px}p{margin:0 0 18px}li{margin:7px 0}ul,ol{padding-left:25px}.note{border-left:3px solid #99b9a0;padding:14px 20px;background:#f0f5ee;margin:28px 0}.note p:last-child{margin-bottom:0}.button{display:inline-block;background:var(--green);color:white;text-decoration:none;padding:11px 19px;border-radius:6px;font-weight:600;font-size:16px}.fine{font-size:14px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0 34px}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}code{font-size:.9em;background:#edf2ed;padding:2px 5px;border-radius:3px}section{scroll-margin-top:24px}@media(max-width:520px){.wrap{padding:0 20px}main{padding-top:38px}nav{min-height:72px}.navlinks{gap:16px}.lead{font-size:19px}h2{font-size:21px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Navegación principal"><a class="brand" href="index.html">CICLO</a><div class="navlinks"><a href="index.html">Información</a><a href="privacidad.html">Privacidad</a></div></nav></div></header>
+<main><div class="wrap">
+<p class="eyebrow">Continuidad del proyecto</p>
+<h1>Respaldo Ciclo</h1>
+<p class="lead">Herramienta de respaldo del proyecto educativo Ciclo, destinada a conservar copias cifradas de su base de datos MySQL en una cuenta autorizada de Google Drive.</p>
+<p>Ciclo es un sistema de gestión de residuos desarrollado por el equipo GreenTech. Su herramienta de respaldo permite recuperar la información del sistema ante una falla del servidor principal.</p>
+<section aria-labelledby="funcion"><h2 id="funcion">Cómo funciona</h2>
+<ol><li>Genera una exportación de la estructura y los datos de MySQL en el servidor del proyecto.</li><li>Utiliza rclone para cifrar el contenido y los nombres de las copias antes de almacenarlas en Google Drive.</li><li>Lee la copia remota a través de la capa de cifrado para comprobar su integridad y permitir una recuperación posterior.</li></ol>
+<p>La autorización de Google permite realizar esas operaciones con los archivos de Drive asociados a la aplicación. La conexión es administrada por la persona responsable de los respaldos del proyecto.</p></section>
+<section aria-labelledby="acceso"><h2 id="acceso">Acceso a Google Drive</h2>
+<p>Respaldo Ciclo solicita el permiso <code>drive.file</code> para crear y gestionar sus archivos de respaldo. No solicita acceso a Gmail, Google Fotos ni acceso general al contenido de Drive.</p>
+<p>Las copias externas de esta herramienta contienen dumps de MySQL. El código de Ciclo, la configuración del servidor y los archivos adjuntos se respaldan por separado en el entorno local.</p>
+<a class="button" href="privacidad.html">Consultar la política de privacidad</a></section>
+<section aria-labelledby="uso"><h2 id="uso">Uso y administración</h2>
+<p>Esta herramienta está destinada al uso autorizado del equipo del proyecto. Su ejecución, la cuenta de destino y la custodia de las claves de recuperación son administradas por la persona responsable de los respaldos.</p>
+<p>Estas páginas son informativas: no permiten iniciar sesión en Ciclo, subir archivos ni consultar datos de la base de datos.</p></section>
+<section aria-labelledby="contacto"><h2 id="contacto">Contacto</h2>
+<p>Para consultas sobre los permisos o las copias de Respaldo Ciclo, utilizá el correo de asistencia de la aplicación que se muestra en su pantalla de autorización de Google.</p></section>
+</div></main>
+<footer><div class="wrap"><span class="fine">Respaldo Ciclo · Proyecto educativo GreenTech</span><a class="fine" href="privacidad.html">Política de privacidad</a></div></footer>
+</body>
+</html>
