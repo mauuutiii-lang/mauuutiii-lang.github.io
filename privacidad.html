@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Política de privacidad de Respaldo Ciclo: permisos de Google Drive, uso de datos, cifrado y conservación.">
+<meta name="referrer" content="no-referrer">
+<title>Política de privacidad | Respaldo Ciclo</title>
+<!-- La etiqueta de verificación de Search Console se agregará antes de verificar el sitio. -->
+<style>
+:root{color-scheme:light;--green:#184b3e;--ink:#24322e;--muted:#586660;--line:#dce5df;--paper:#fcfdfb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--green);text-underline-offset:.2em}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid #b3d39a;outline-offset:5px}
+.wrap{max-width:860px;margin:auto;padding:0 28px}header{border-bottom:1px solid var(--line)}nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:16px 0}.brand{font-weight:750;letter-spacing:.11em;text-decoration:none}.navlinks{display:flex;gap:24px;font-size:15px}main{padding:62px 0 58px}.eyebrow{color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:750;margin:0 0 16px}h1{font-size:clamp(32px,6vw,48px);line-height:1.16;letter-spacing:-.035em;margin:0 0 22px;font-weight:700}h2{font-size:23px;line-height:1.3;margin:36px 0 12px;letter-spacing:-.015em}.lead{font-size:21px;line-height:1.6;color:var(--muted);margin-bottom:34px}p{margin:0 0 18px}li{margin:7px 0}ul,ol{padding-left:25px}.note{border-left:3px solid #99b9a0;padding:14px 20px;background:#f0f5ee;margin:28px 0}.note p:last-child{margin-bottom:0}.button{display:inline-block;background:var(--green);color:white;text-decoration:none;padding:11px 19px;border-radius:6px;font-weight:600;font-size:16px}.fine{font-size:14px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0 34px}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}code{font-size:.9em;background:#edf2ed;padding:2px 5px;border-radius:3px}section{scroll-margin-top:24px}@media(max-width:520px){.wrap{padding:0 20px}main{padding-top:38px}nav{min-height:72px}.navlinks{gap:16px}.lead{font-size:19px}h2{font-size:21px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Navegación principal"><a class="brand" href="index.html">CICLO</a><div class="navlinks"><a href="index.html">Información</a><a href="privacidad.html">Privacidad</a></div></nav></div></header>
+<main><div class="wrap">
+<p class="eyebrow">Información sobre el uso de datos</p>
+<h1>Política de privacidad</h1>
+<p class="fine">Respaldo Ciclo · Actualización: 6 de noviembre de 2026</p>
+<p>Esta política describe el acceso a Google Drive y el tratamiento de la información por parte de Respaldo Ciclo, la herramienta de respaldo del proyecto educativo Ciclo del equipo GreenTech.</p>
+<section aria-labelledby="responsable"><h2 id="responsable">1. Responsable y finalidad</h2>
+<p>La administración de esta herramienta corresponde a la persona responsable de los respaldos del proyecto Ciclo. Su finalidad es conservar copias de la base de datos MySQL para verificar su integridad y recuperar la información ante una falla del servidor principal.</p>
+<p>Para consultas o solicitudes relacionadas con estas copias, utilizá el correo de asistencia identificado en la pantalla de autorización de Respaldo Ciclo en Google.</p></section>
+<section aria-labelledby="datos"><h2 id="datos">2. Información utilizada</h2>
+<p>La herramienta utiliza archivos de respaldo y los metadatos necesarios para guardarlos, identificarlos, comprobarlos y recuperarlos en Google Drive. Los dumps pueden contener la estructura de la base y los datos almacenados por Ciclo, incluidos registros de usuarios y de operación del sistema.</p>
+<p>La configuración de conexión conserva credenciales OAuth y claves de cifrado en archivos privados del servidor. Esos archivos no forman parte de los dumps que se envían a Drive.</p></section>
+<section aria-labelledby="permisos"><h2 id="permisos">3. Permisos de Google</h2>
+<p>La conexión solicita el alcance <code>https://www.googleapis.com/auth/drive.file</code>. Se utiliza para crear y gestionar los archivos de Drive asociados a la aplicación: subir las copias, leerlas para comprobarlas y descargarlas para recuperarlas.</p>
+<p>No se solicitan permisos de Gmail, Google Fotos ni de acceso general al contenido de Drive. El acceso debe ser autorizado por la cuenta de Google que conserva los respaldos.</p></section>
+<section aria-labelledby="proteccion"><h2 id="proteccion">4. Almacenamiento y protección</h2>
+<p>Los dumps se cifran mediante la capa <code>crypt</code> de rclone antes de almacenarse en Google Drive. La configuración prevista cifra tanto el contenido como los nombres de archivos y directorios. Los archivos cifrados se guardan en la cuenta autorizada de Google.</p>
+<p>Las copias y los pendientes locales permanecen protegidos por los permisos del servidor; esa protección local no equivale a cifrado de su contenido. Las credenciales y las claves de recuperación deben conservarse de forma privada y separadas de los archivos públicos del proyecto.</p>
+<p>Google proporciona el almacenamiento de Drive y aplica sus propias condiciones y su <a href="https://policies.google.com/privacy" rel="noreferrer">política de privacidad</a>.</p></section>
+<section aria-labelledby="uso-datos"><h2 id="uso-datos">5. Uso limitado de la información</h2>
+<p>La información obtenida mediante las APIs de Google se utilizará exclusivamente para las funciones de copia, verificación y recuperación descritas aquí. No se utilizará para publicidad, comercialización de datos ni entrenamiento de modelos de inteligencia artificial.</p>
+<p>Su tratamiento se limita a estas finalidades y debe cumplir la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado aplicables.</p></section>
+<section aria-labelledby="retencion"><h2 id="retencion">6. Conservación y eliminación</h2>
+<p>La retención de copias locales se administra por separado. La copia externa descrita aquí no elimina automáticamente los dumps ya enviados a Google Drive: permanecen hasta que la persona responsable los elimine de esa cuenta conforme a las necesidades del proyecto.</p>
+<p>Las copias pendientes locales se conservan hasta que la subida se verifica. Después se retira el archivo de la cola de envío y se conserva un comprobante de integridad. Ese comprobante no contiene los datos completos del dump.</p></section>
+<section aria-labelledby="control"><h2 id="control">7. Control del acceso</h2>
+<p>La cuenta autorizada puede revocar el acceso de Respaldo Ciclo desde las conexiones con aplicaciones de terceros de su cuenta de Google. La revocación impide nuevas operaciones autorizadas; no elimina automáticamente las copias que ya existan en Drive ni las copias locales.</p>
+<p>Las solicitudes sobre acceso, recuperación o eliminación de respaldos deben dirigirse a la persona responsable del proyecto a través del correo de asistencia de la aplicación.</p></section>
+<section aria-labelledby="sitio"><h2 id="sitio">8. Estas páginas informativas</h2>
+<p>Estas páginas no contienen formularios de recopilación de datos, publicidad, herramientas de analítica ni scripts de seguimiento propios. El proveedor del alojamiento puede procesar registros técnicos según sus políticas.</p>
+<p>Si cambian las finalidades o los permisos de la herramienta, esta política debe actualizarse y debe solicitarse una nueva autorización cuando corresponda.</p></section>
+<p><a href="index.html">Volver a la información de Respaldo Ciclo</a></p>
+</div></main>
+<footer><div class="wrap"><span class="fine">Respaldo Ciclo · Proyecto educativo GreenTech</span><a class="fine" href="privacidad.html">Política de privacidad</a></div></footer>
+</body>
+</html>
